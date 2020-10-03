@@ -1,11 +1,18 @@
 import lvgl as lv
-
+import styles
 
 def lv_arc(screen):
 
     # Create the arc object on lv screen, ie a lv.scr() object
     arc = lv.arc(screen)
 
+    # Set arc size
+    arc.set_size(150, 150)
+
+    # Set arc background style color blue
+    arc.add_style(arc.PART.BG, styles.gstyle_bg1)
+    # Set arc indicator (i.e. line) style to color red
+    arc.add_style(arc.PART.INDIC, styles.gstyle_line1)
 
     # Setup Angles, from docs:
     #  Zero degree is at the middle right (3 o'clock) of the object and the degrees are increasing
@@ -19,9 +26,6 @@ def lv_arc(screen):
     #arc.set_bg_angles(180,max)
     # Set start angle of the arc (0-360 degrees)
     #arc.set_start_angle(0)
-
-    # Set arc size
-    arc.set_size(150, 150)
 
     # Get current value of arc
     # print(arc.get_value()) # default is 0
