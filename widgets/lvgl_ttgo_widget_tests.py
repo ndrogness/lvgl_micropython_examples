@@ -5,6 +5,7 @@ from widgets.lv_arc import lv_arc
 from widgets.lv_img import lv_img
 from widgets.lv_canvas import lv_canvas
 from widgets.lv_button import lv_button
+from widgets.lv_tileview import lv_tileview
 
 # Globals
 watch = ttgo.Watch()
@@ -31,13 +32,16 @@ lv.scr_load(scr)
 watch.tft.backlight_fade(50)
 
 # Show Canvas
-lv_canvas.lv_canvas(scr)
+#lv_canvas.lv_canvas(scr)
 
 # Show Arc
 # lv_arc.lv_arc(scr)
 
 # Show Button
-lv_button.lv_button(scr)
+#lv_button.lv_button(scr)
+
+# Show tileview
+lv_tileview.lv_tileview(scr)
 
 #widget_page = lv.page(scr)
 #widget_page.set_size(240, 960)
