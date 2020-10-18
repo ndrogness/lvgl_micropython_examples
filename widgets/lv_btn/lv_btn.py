@@ -9,7 +9,7 @@ def button_event_handler(obj, event):
         print("Toggled")
 
 
-def lv_button(screen):
+def lv_btn(screen):
 
     # Create button object on center screen
     button1 = lv.btn(screen)
@@ -31,4 +31,4 @@ if __name__ == '__main__':
     lv.init()
     scr = lv.obj()
     lv.scr_load(scr)
-    lv_button(scr)
+    lv_btn(scr)
